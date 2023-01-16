@@ -10,7 +10,3 @@ RUN apt-get update && \
 EXPOSE 5000
 
 CMD ["python", "wa.py"]
-
-
-
-CMD ["2"]
