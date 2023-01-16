@@ -2,13 +2,12 @@ FROM python
 
 RUN apt-get update && \
   apt-get install -y \
-  pip \
-  request \
-  bs4 \
-  phonenumbers \
-  pycryptodome && \
+  python \
+  pip && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
+
+RUN 
 
 EXPOSE 5000
 

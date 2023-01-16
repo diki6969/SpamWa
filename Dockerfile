@@ -7,13 +7,7 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
-RUN pip install request
-
-RUN pip install bs4
-
-RUN pip install phonenumbers
-
-RUN pip install pycryptodome
+RUN python -m pip install -r requirements.txt
 
 EXPOSE 5000
 
