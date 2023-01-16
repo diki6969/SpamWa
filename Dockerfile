@@ -2,11 +2,14 @@ FROM python
 
 RUN apt-get update && \
   apt-get install -y \
-  pip && \
+  python \
+  pip \
+  request \
+  bs4 \
+  phonenumbers \
+  pycryptodome && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
-
-RUN python -m pip install -r requirements.txt
 
 EXPOSE 5000
 
